@@ -34,8 +34,8 @@ if (currentRule.length > 0) {
 
 ruleSets.forEach((rules, i) => {
   let label = 'CHINA-IP-' + (i + 1);
-  xmlContent += `
-  <Rule enabled="true">
+  xmlContent += 
+  `<Rule enabled="true">
     <Name>${label}</Name>
     <Targets>${rules.join(';')}</Targets>
     <Action type="Direct" />
