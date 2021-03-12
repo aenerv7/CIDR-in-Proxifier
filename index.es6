@@ -5,7 +5,7 @@ let CIDR = require('cidr-js');
 let cidr = new CIDR();
 
 const CIDR_PATH = './ChinaCIDR.txt';
-const XML_PATH = './ChinaCIDR_forProxifier.xml';
+const XML_PATH = './ChinaCIDR2IPforProxifier.xml';
 
 const COMBINE_LINES = 500;
 
@@ -33,7 +33,7 @@ if (currentRule.length > 0) {
 }
 
 ruleSets.forEach((rules, i) => {
-  let label = 'CHINA-IP-' + (i + 1);
+  let label = 'China IP Segment ' + (i + 1);
   xmlContent += 
   `<Rule enabled="true">
     <Name>${label}</Name>
